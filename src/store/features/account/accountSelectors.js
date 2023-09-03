@@ -1,0 +1,1 @@
+export const selectAccountStatus = state => state.account.status;

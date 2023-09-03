@@ -1,0 +1,10 @@
+version: '3'
+services:
+  fibarium-demo-site:
+    image: flashspys/nginx-static
+    restart: always
+    container_name: fibarium-demo-site
+    ports:
+      - "15000:15000"
+    volumes:
+      - ./build:/static
